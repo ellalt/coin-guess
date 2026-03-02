@@ -6,6 +6,7 @@ const CoinFlipForm = () => {
   
   // State variables - will be used later
   const [account, setAccount] = useState(null)
+  const [connect, setConnect] = useState(false)
   /*
   Write Your Codes Here
   */
@@ -14,6 +15,11 @@ const CoinFlipForm = () => {
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
   };
+
+  const handleConnect =() =>{
+    setConnect(true);
+
+  }
 
   /*
   Write Your Codes Here
